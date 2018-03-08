@@ -1,0 +1,115 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.abautista.loginfragments.BlankFragment">
+
+ <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur">
+
+
+        <TextView
+            android:id="@+id/tvwelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif-monospace"
+            android:text="Welcome"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/welcomwsize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3" />
+
+        <TextView
+            android:id="@+id/tvMsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="No sólo sobrevivió 500 años, sino que tambien ingresó como texto "
+            android:textAlignment="center"
+            android:textColor="@color/textlogin2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvwelcome" />
+
+        <EditText
+            android:id="@+id/etEmail2"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/logincustom"
+            android:hint="Nombre"
+            android:textAlignment="center"
+            android:textColor="@color/textlogin2"
+            android:textColorHint="@color/textlogin2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMsj">
+
+
+        </EditText>
+
+
+        <EditText
+            android:id="@+id/etPass"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="10dp"
+            android:width="200dp"
+            android:background="@drawable/logincustom"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="@color/textlogin2"
+            android:textColorHint="@color/textlogin2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etEmail2" />
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:width="200dp"
+            android:background="@drawable/logincustom2"
+            android:text="Login"
+            android:textColor="@color/textlogin2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/etPass"/>
+
+        <TextView
+            android:id="@+id/tvPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textColor="@color/textlogin2"
+            app:layout_constraintEnd_toStartOf="@id/tvline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin" />
+
+        <TextView
+            android:id="@+id/tvline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Register"
+            android:textColor="@color/textlogin2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvPass"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+ </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
